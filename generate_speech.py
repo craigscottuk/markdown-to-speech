@@ -20,7 +20,7 @@ voice = "onyx"
 instructions = "Speak in a confident and professional tone, suitable for a product demo."
 
 # Read input text from Markdown file
-input_text_file = Path("input_text.md")
+input_text_file = Path("input_markdown.md")
 if not input_text_file.exists():
     raise FileNotFoundError(f"Input text file not found: {input_text_file}")
 markdown_content = input_text_file.read_text()
