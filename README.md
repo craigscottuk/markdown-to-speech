@@ -1,6 +1,6 @@
 # markdown-to-speech
 
-Markdown-to-Speech is a Python tool that converts Markdown text into high-quality voiceovers using OpenAI's text-to-speech API. This tool is ideal for creating professional audio content from structured text files.
+markdown-to-speech is a Python tool that converts Markdown text into high-quality voiceovers using OpenAI's text-to-speech API. This tool is ideal for creating professional audio content from structured text files.
 
 ## Features
 
@@ -42,7 +42,7 @@ Markdown-to-Speech is a Python tool that converts Markdown text into high-qualit
 
 ## Usage
 
-1. Place your Markdown file in the project directory and name it `input_text.md`.
+1. Place your Markdown content in the `input_markdown.md` file.
 
 2. Run the script:
 
@@ -76,9 +76,9 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 Feel free to submit issues or pull requests to improve this tool!
 
-````# Markdown-to-Speech
+````# markdown-to-speech
 
-Markdown-to-Speech is a Python tool that converts Markdown text into high-quality voiceovers using OpenAI's text-to-speech API. This tool is ideal for creating professional audio content from structured text files.
+markdown-to-speech is a Python tool that converts Markdown text into high-quality voiceovers using OpenAI's text-to-speech API. This tool is ideal for creating professional audio content from structured text files.
 
 ## Features
 - Converts Markdown files to plain text.
@@ -117,7 +117,7 @@ Markdown-to-Speech is a Python tool that converts Markdown text into high-qualit
 
 ## Usage
 
-1. Place your Markdown file in the project directory and name it `input_text.md`.
+1. Place your Markdown file in the project directory and name it `input_markdown.md`.
 
 2. Run the script:
 
@@ -142,10 +142,6 @@ After running the script, you will see a confirmation message:
 ```
 ✅ Speech saved as: voiceovers/intro_2025-05-30_14-45.mp3
 ```
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ## Contributing
 
