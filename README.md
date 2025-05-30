@@ -1,6 +1,6 @@
 # markdown-to-speech
 
-Markdown-to-Speech is a Python tool that converts Markdown text into high-quality voiceovers using OpenAI's text-to-speech API. This tool is ideal for creating professional audio content from structured text files.
+markdown-to-speech is a Python tool that converts Markdown text into high-quality voiceovers using OpenAI's text-to-speech API. This tool is ideal for creating professional audio content from structured text files.
 
 ## Features
 
