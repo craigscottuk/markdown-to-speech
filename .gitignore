@@ -1,0 +1,14 @@
+# Virtual environment
+venv/
+
+# Environment variable files
+.env
+
+# MacOS metadata
+.DS_Store
+
+# cspell configuration
+.cspell.json
+
+# voiceover files
+voiceovers/
