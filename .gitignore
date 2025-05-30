@@ -8,7 +8,7 @@ venv/
 .DS_Store
 
 # cspell configuration
-.cspell.json
+cspell.json
 
 # voiceover files
 voiceovers/
