@@ -12,3 +12,6 @@ cspell.json
 
 # voiceover files
 voiceovers/
+
+# Instruction files
+run.md
