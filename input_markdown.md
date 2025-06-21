@@ -1,13 +1,27 @@
-Each column in this section represents a **specific component category** used in a bike build — like **Bottom Bracket**, **Crankset**, **Front Chainring**, or **Brake / Shift Lever**.
+Now let’s take a look at how we can make edits using the **Project Manager Tool**.
 
----
+To open an offer, simply tick the checkbox next to the project ID and name. Since Google Sheets doesn’t support real buttons inside cells, this checkbox acts as a lightweight workaround to launch the selected offer in the Project Manager.
 
-If a part is mistyped or missing from the **PARTS INDEX**, a Google Sheets data validation rule will flag the cell and display a warning.
+Ticking it triggers a script that opens the Project Manager spreadsheet — a dedicated template — and pulls in the corresponding offer from the main system.
 
-That same invalid item is also flagged in the _Unknown Items_ column, under the _COST OF CONFIG & CHECK_ section. Conditional formatting highlights the issue with a red background and yellow text. Clicking the highlighted cell opens a dropdown listing the unrecognised part and its quantity.
+The Project Manager displays the same offer, but in a vertical layout, with information grouped into tabbed sections: **Status**, **Price**, **Dates**, **Configuration**, **Design**, and **Customer**.
 
-You’ll also notice that both the **System Price** and **Offer Price** cells turn red — because the system can’t calculate a proper price without knowing the cost of every component.
+Editable fields are shown with a light-shaded background. Let’s go to the **Design** tab and update the paint colour from blue to yellow — and change the price from 100 zł to 500 zł.
 
-To resolve this, we can either fix the typo — or, if it’s a valid part, add it to the **PARTS INDEX**. In this case, we’ll add it to the index. We’ll open the **Inventory & Parts Management** spreadsheet, create a new row, and enter the part’s details. Once that’s done, refreshing the **Offer & Production Management** spreadsheet will update the system — the part will be recognised, and the error will disappear.
+We’ll also jump to the **Configuration** tab and switch the front chainring from a 48T to a 50T model using the dropdown.
 
-There are other validation checks in place too — for example, duplicated IDs are flagged to avoid repeated entries. The cleaner the data is at this early stage, the smoother everything runs later on.
+Now, if we return to the main **Offer & Production Management** spreadsheet, we’ll see the changes have been applied. Opening the configuration dropdown confirms the update — the chainring now shows the 50T model.
+
+All of this is handled by Google Apps Script, which keeps both spreadsheets synced automatically.
+
+The Project Manager offers a faster, more focused way to work — allowing users to concentrate on one project at a time and navigate via tabs, rather than scrolling across dozens of columns while looking at a single row.
+
+Error checking is also built in. If we enter a typo in the configuration, conditional formatting highlights the issue immediately. Because the Project Manager imports the **PARTS INDEX** from the **Parts & Inventory** spreadsheet, it can detect unrecognised items in the same way as the main system.
+
+Switching back to the main spreadsheet, we’ll also see the part flagged there — and the pricing fields highlighted again.
+
+So, edits made in either tool are always synced to the **Offer & Production Management** spreadsheet — keeping everything up to date and consistent.
+
+The Project Manager can also be used later in the process, once a project has moved into production. At that stage, the **Status** tab provides a detailed overview of progress as the build moves through each phase.
+
+We’ll cover that in a future video — but next, we’ll look at how to generate customer-facing PDFs that summarise an offer or project for sharing with the customer.
