@@ -1,25 +1,53 @@
-Now let’s take a look at how we can make edits using the **Project Manager Tool**.
+As mentioned in the previous video, there are two key pricing columns: **System Price** in Column F and **Offer Price** in Column G.
 
-To open an offer, simply tick the checkbox next to the project ID and name. This triggers a script that opens the **Project Manager Tool** in a new tab and pulls in the corresponding offer data from the main system.
+When a new offer is submitted, dynamic formulas are automatically applied to that row. These formulas calculate the **System Price**, which then generates an **Offer Price**.
 
-The **Project Manager** displays the same offer, but in a vertical layout, with information grouped into tabbed sections: **Status**, **Price**, **Dates**, **Configuration**, **Design**, and **Customer**.
+Both values are influenced by the **Currency** in Column D and the **VAT Rate** in Column E.
 
-Let’s go to the **Design** tab and update the paint colour from orange to yellow — and change the price from 100 zł to 500 zł.
+This demo is based on a real-world system I built for a bicycle manufacturer in Poland, so I’ve kept the original currency setup. You’ll see prices displayed in **Polish złoty (PLN)** and **Euros (EUR)**, with PLN as the system’s primary operating currency.
 
-Next, we’ll jump to the **Configuration** tab and remove the front chainring by clearing the value in this cell.
+Looking at the data here, we can see several offers for Poland-based customers — indicated by **PLN** as the currency and a **23% VAT rate**. There are also offers for German customers — using **EUR** with **19% VAT** — and for customers in Czechia, also paying in **EUR**, but with **21% VAT**. And it looks like there’s one Swiss customer, where **no VAT** is applied at all.
 
-Now, if we return to the main **Offer & Production Management** spreadsheet, we’ll see the changes have been applied. Opening the configuration dropdown confirms the update — the chainring field is now empty.
+The **Currency** and **VAT Rate** are first defined by the salesperson in the **Customer** tab of the offer creation form — but they can also be edited directly in the sheet.
 
-All of this is handled by Google Apps Script, which keeps both spreadsheets synced automatically.
+For example, if we change the currency for customer “Król” from **PLN** to **EUR**, the system automatically converts the bike price to Euros. That triggers an update to the **System Price**, using the relevant exchange rate, and the **Offer Price** is adjusted accordingly.
+Currency conversion is handled using a **Google Finance formula**, which includes a date parameter. This allows the system to retrieve the historical exchange rate **based on the offer’s creation date**, ensuring the conversion reflects the rate at that specific time. This helps preserve pricing accuracy for Euro projects.
 
-The Project Manager offers a faster, more focused way to work — allowing users to concentrate on one project at a time and navigate via tabs, rather than scrolling across dozens of columns while looking at a single row.
+If the **VAT Rate** is updated on an offer, the **System Price** is recalculated first, followed by the **Offer Price**, which adjusts to reflect the new VAT.
 
-Error checking is also built in. If we enter a typo in the configuration, conditional formatting highlights the issue immediately. Because the Project Manager imports the **PARTS INDEX** from the **Parts & Inventory** spreadsheet, it can detect unrecognised items in the same way as the main system.
+Let’s take a closer look at how the **System Price** is calculated by examining a full order.
 
-Switching back to the main spreadsheet, we’ll also see the part flagged there — and the pricing fields highlighted again.
+The **System Price** consists of several costs and estimates, which we’ll walk through now.
 
-So, edits made in either tool are always synced to the **Offer & Production Management** spreadsheet — keeping everything up to date and consistent.
+The majority of the **System Price** comes from the **estimated net cost of the configuration** — that’s the total cost of all the parts and accessories required to assemble the bike. We can get a detailed view of this configuration by expanding this column group, which reveals all the offer data.
 
-The Project Manager can also be used later in the process, once a project has moved into production. At that stage, the **Status** tab provides a detailed overview of progress as the build moves through each phase.
+The formula here fetches the cost of each component listed in the configuration. If we take a look at it, you’ll see the relevant data spans columns **AC to BX**. The data from these columns is collected and references imported data from the **Inventory & Parts Management** spreadsheet—specifically the **PARTS INDEX** sheet—where pricing is managed by the team and each item has a net price. The formula sums up the cost of all selected components and displays the total net value here.
 
-We’ll cover that in a future video — but next, we’ll look at how to generate customer-facing PDFs that summarise an offer or project for sharing with the customer.
+Another key factor in the **System Price** is the **design and painting cost**, which you can see here under the blue headers. This reflects the cost of painting the frame and fork, based on the customer’s chosen colour scheme or design. To keep things simple in this demo, I’ve reduced the options to basic colours and simplified the pricing. In real life, custom bicycle companies often offer more elaborate and creative paintwork, as well as additional design services.
+
+Next, we account for **labour estimates**, which cover time for frame preparation, assembly, and customer communication. These costs appear under the black headers and can be manually updated by the salesperson for more demanding or complex projects.
+
+Lastly, we apply a **target net margin**, which is predefined for this bike type or product and is applied to the offer during form submission.
+
+The paint cost, labour estimates, and margin can all be manually adjusted by the salesperson if needed. Any updates to these values will affect the overall pricing of the project.
+
+So just to summarise, the **System Price** includes:
+
+- the target net margin
+- labour for customer communication, preparation, and assembly
+- the design and painting cost
+- the estimated configuration cost
+- and finally, VAT
+
+If the customer’s preferred currency is PLN, the gross value is shown here in złoty. If Euros were set during submission, then the final price is converted using the exchange rate on the day the order was created.
+
+Lastly, let’s take a look at the **Offer Price**, in Column G. This is the final price shown to the customer in the PDF offer document that the system generates and sends out. It’s based on the **System Price**, but rounded using predefined rules to create clean, retail-friendly figures.
+
+For example:  
+PLN prices are rounded up to end in **49 złoty** or **99 złoty**, while EUR prices are rounded up to end in **...9 €**.
+
+These rounding rules are applied automatically. If the salesperson edits the configuration or changes the design and the **System Price** is recalculated, the **Offer Price** updates as well with a new rounded value.
+
+However, the **Offer Price** can still be overridden manually by the sales team if a custom figure needs to be applied.
+
+In the next video, we'll take a look at how we can make edits to an offer.
