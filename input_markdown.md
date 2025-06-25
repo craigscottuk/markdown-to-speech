@@ -1,16 +1,5 @@
-So just to summarise, the **System Price** includes:
+The formula here calculates the cost of each component listed in the configuration. You’ll notice the relevant data spans columns **AC to BX**. These columns pull in pricing from the **Inventory & Parts Management** spreadsheet — specifically the **PARTS INDEX** sheet — where each item has a net price managed by the team. The formula totals the cost of all selected components and displays the combined net value here.
 
-- the target net margin
-- labour for customer communication, preparation, and assembly
-- the design and painting cost
-- the estimated configuration cost
-- and finally, VAT
+Another key factor in the **System Price** is the **design and painting cost**, shown under the blue headers. This reflects the cost of painting the frame and fork based on the customer’s chosen colour scheme. For this demo, we’re using simplified options and pricing.
 
-If the customer’s preferred currency is **PLN**, the gross value appears in złoty. If **EUR** is selected, the final price is converted to Euros — and the **Offer Price** is recalculated with a newly rounded value to create clean, retail-friendly figures.
-
-For example:  
-**EUR** prices are rounded up to end in **...9 €**, while **PLN** prices are rounded up to end in **49 zł** or **99 zł** — all applied automatically.
-
-The **Offer Price** is the final amount shown in the PDF offer document, but it can still be manually overridden by the sales team if a custom figure needs to be applied.
-
-In the next video, we’ll look at how to generate a PDF offer document.
+Next, under the black headers, are the **labour estimates** — covering tasks like frame preparation, assembly, and customer communication. These values can be manually adjusted by the salesperson to account for more complex or time-consuming projects.
