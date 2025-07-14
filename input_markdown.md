@@ -1,1 +1,1 @@
-This dropdown tracks the progress of part preparation — specifically, whether the parts box and painted frameset are ready for handoff to the mechanics. By default, the status is set to **PARTS NOT PREPARED**, but it can be updated by the production team to:
+At the far right, the final column is used to send selected projects into the next stage. Tickboxes allow multiple projects to be batched. Once selected, the user can either use the **Send** option from the main menu, then choose **Send to next stage** or click the **Send** label at the top of the column.
