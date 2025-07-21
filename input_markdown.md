@@ -1,35 +1,16 @@
-This sheet provides a real-time overview of current inventory and parts demand across all active projects.
+The **STOCK IN** sheet is where we enter newly purchased parts into the system. Each row represents a single inventory entry — usually copied over from a supplier invoice or delivery note.
 
-This sheet is **dynamically generated**, pulling in live data from other sheets within this file — as well as from the production management environment. Because of this, it can’t be edited directly.
+To log a new item, we start by entering or selecting the **Item Code** from the dropdown in column C. You can scroll through the full list or start typing to quickly filter results. These codes match the **Item Codes** listed in the **PARTS INDEX**, keeping everything consistent across the system. If you're working from a digital invoice, you can also copy and paste the code straight in for quicker entry.
 
-Each row represents a unique part from our inventory — whether it's in stock, already allocated to a build, or still needed for an upcoming project. The system combines data from multiple sources to calculate these values automatically:
+Once the code is selected, the rest of the product details — like the **Name**, **Manufacturer**, and **Item Category** — are automatically filled in using data from the **PARTS INDEX**. This built-in lookup acts as a safeguard, helping confirm that we’re logging the correct item.
 
-- **Stock-In, Stock-Out, and Stock-Offset** sheets provide the actual movement of parts into and out of the system.
-- The **Parts & Painting** sheet feeds in production demand from projects that are in pre-assembly.
-- The **Assembly & Testing** sheet shows how many units are already allocated to builds in progress.
-- The **Completed Projects** sheet helps remove parts from stock once bikes are finished.
+After the item code is added, the **Date** in column B is automatically populated with today’s date – though it can be manually adjusted to match the actual delivery or invoice date.
 
-This all comes together here to give us an up-to-date view of stock on hand, future demand, and any gaps we need to fill.
+Next, we manually enter:
 
-Each row shows a unique inventory item, identified by:
+- **Quantity (QTY)** — the number of units received
+- **Net Price (PLN)** — the unit price listed on the invoice
 
-- **Item Code** – the product or internal reference number
-- **Item Name** – the item’s full name
-- **Manufacturer** – the brand or supplier
-- **Item Category** – category or type (e.g. tyre, headset)
+The **Net Value** is then worked out automatically by multiplying the quantity by the unit price.
 
-Then we move into the dynamic stock and demand columns:
-
-- **Allocated to Assembly** – the number of units currently assigned to builds in the Assembly & Testing stage
-- **Available Stock** – parts physically on-site and ready to be used for upcoming builds
-- **Total Stock** – the current on-site inventory, based on all stock movements: added via **Stock-In**, removed via **Stock-Out** and **Completed Projects**, with adjustments from **Stock-Offset**
-- **Production Demand** – number of units needed to fulfil current project requirements, based on the Painting & Parts sheet
-- **Missing** – any shortfall between the total stock and what’s required for active projects
-- **Surplus** – any excess quantity beyond current production needs
-
-Finally, we have the **financial overview**:
-
-- **Net Item Price** – the part’s unit net price net
-- **Net Value of Items in Stock** – calculated by multiplying the total stock by the unit price
-
-At the top right, we can see the **estimated net value of all stock** currently on-site — a useful metric for procurement, planning, and insurance purposes.
+The data in this sheet is counted and dynamically fed into the **STOCK LEVELS** sheet, where it contributes to the **Total Stock** and **Available** stock calculations.
