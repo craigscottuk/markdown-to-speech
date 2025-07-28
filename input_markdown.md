@@ -1,31 +1,49 @@
-We’re now back in the **PAINTING & PARTS** sheet of the **Offer & Production Management** spreadsheet. Returning to our example project — **Donaldson** — we can see that it’s still missing three components.
+Before we wrap up this section, let's take a look at how **Available Stock** and **Allocated Stock** work in the system – and how they respond to project movements across the system.
 
-If we expand the dropdown in the **Missing** column, we get a list of the items that are currently unavailable, along with the required quantities.
+To keep things simple for this demonstration, let’s start by resetting the current inventory.
 
-We can also view this information from inside the **Project Manager**. Let’s open it by ticking the checkbox next to the project.
+We’ll open the **STOCK IN** sheet inside the **Parts & Inventory Management** spreadsheet and delete all the entries — clearing out the existing stock. You’ll notice that the **STOCK LEVELS** sheet now reflects this change: every item shows **0** in **Total Stock**, **Available Stock**, and **Allocated to Assembly**.
 
-Inside the **Status** tab — where we land by default — we see a summary of the project’s health, including the number of missing items and their total net cost. Scrolling further down reveals the full configuration for this build, with the three missing items highlighted in red. Each is listed alongside the quantity still needed.
+Now, if we return to the **PAINTING & PARTS** sheet, we can see the impact across all projects. The **Parts Availability** and **Percentage** columns are all red — and if we scroll down to **Donaldson**, it’s dropped back to **0 out of 26 parts available**, with **0% readiness**.
 
-The **Project Manager** also pulls live data from the **Parts & Inventory Management** spreadsheet.
+The dropdowns in the **Missing** column are still showing the stale values from before the stock reset — but if we click inside, they’re empty. Refreshing the sheet will update these values across all projects.
 
-Let’s take a look at how the production and inventory spreadsheets work together. Imagine we’ve just received a delivery containing exactly the three missing components for this project.
+To show how **Available Stock** works at this stage, let’s add the full list of components required for **Donaldson**'s build.
 
-We’ll start by copying the item codes for these missing items, and then head over to the **STOCK IN** sheet, located in the **Parts & Inventory Management** spreadsheet.
+We’ll open the **STOCK IN** sheet again, and paste in the **Item Codes** for each of the missing parts. The product data auto-fills, and we’ll enter a quantity of **1** for each — except for **inner tubes** and **tyres**, where we’ll enter **2 units**.
 
-We can jump to the bottom of the sheet using the keyboard shortcut **Cmd + ↓** (or **Ctrl + ↓** on Windows), and then paste in the item codes.
+Let’s take a quick look at the **STOCK LEVELS** sheet to see how things look now.
 
-The remaining columns auto-fill based on the data stored in the **PARTS INDEX** sheet, and today’s **Date** is automatically added in column B. We’ll now enter a quantity of **1** for each, since we’ve received a single unit of each part.
+We’ll tick this checkbox in the header to filter the list to only show items that are currently in stock. Here, we can see the full list of parts for Donaldson that we just added — all marked as **Available**, and none yet **Allocated**. This means every component is ready for use in any eligible project in the **PAINTING & PARTS** stage.
 
-Once entered, these items are now officially part of our available stock.
+Jumping back to the **PAINTING & PARTS** stage, we can now see that **Donaldson** has **26 out of 26 parts available**, and the percentage column is once again green — showing 100% readiness.
 
-If we switch back to the **Project Manager**, we’ll see the status has updated in real time — all items are now in stock for **Donaldson**.
+At the same time, we can see that other projects have partially recovered — some now show **10%**, **20%**, or **40%** availability. That’s because some of the parts we just added are compatible with multiple builds, and since they haven’t yet been allocated to a specific project, they remain available for others.
 
-Closing the **Project Manager** and returning to the **PAINTING & PARTS** sheet, we can now see that **Donaldson** has **26 out of 26 parts available**, and both the **Availability** and **Percentage** columns are highlighted in green — indicating the project is ready to move forward.
+This demonstrates how **Available Stock** represents what’s physically on hand — and how that availability can be shared across multiple projects depending on demand.
 
-However, if we look at the **Missing** column, it still shows a value of **3**. Clicking into it, we’ll notice that the dropdown appears empty and a validation warning is displayed.
+Since **Donaldson** is now at 100%, it makes sense to allocate these parts and move the project into the next stage.
 
-This means the system recognises that the current value no longer matches the dropdown options — because there are no longer any missing parts to display.
+Let’s do that now and see what happens in the inventory.
 
-A quick refresh of the spreadsheet will clear this up, and the **Missing** column will update to reflect the current status.
+We’ll scroll to the right-hand side of the **PAINTING & PARTS** sheet. First, we’ll update the status to **PARTS READY** — meaning all required components have been collected from storage and packed for this build.
 
-This live link between the inventory system and production sheets is what keeps everything in sync — helping the team stay up to date on part availability and project readiness in real time.
+Then we’ll tick the checkbox for **Donaldson** in the **Send** column and click the **Send** label at the top. This triggers a script that moves the project into the **ASSEMBLY & TESTING** stage. A confirmation prompt appears — we’ll click **Yes**.
+
+Now, let’s jump back to the **STOCK LEVELS** sheet and take a look at what’s going to change.
+
+Keep an eye on the **Allocated to Assembly** column. You’ll see that it’s now populated with the values that were previously in the **Available Stock** column — and **Available Stock** is now **0** for those parts.
+
+This means all the components for **Donaldson** have been booked — and are no longer available to other projects. However, the **Total Stock** remains unchanged, since the items are still physically onsite and tracked within the system.
+
+This clearly shows how the system distinguishes between:
+
+- what’s in the building (**Total Stock**),
+- what’s still up for grabs (**Available Stock**),
+- and what’s already been booked for upcoming builds (**Allocated to Assembly**).
+
+Back in the **Offer & Production Management** spreadsheet, we can see that the transfer is complete. We’ll click **OK** to dismiss the prompt.
+
+Looking at the **PAINTING & PARTS** sheet, **Donaldson** has now been removed, and if we check the **Parts Preparation** section, all projects are showing **0 parts available** and **0% readiness** — with red conditional formatting applied once again.
+
+And if we switch over to the **ASSEMBLY & TESTING** sheet, we can now see **Donaldson** listed there — ready for the next phase of production, which we’ll cover in the next video.
