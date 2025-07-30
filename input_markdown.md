@@ -1,1 +1,7 @@
-Jumping back to the **PAINTING & PARTS** sheet, we can now see that the **Parts Availability** and **Percentage** columns for **Donaldson** are highlighted in green — showing **26 out of 26** parts available and **100% readiness**. We’ll need to refresh the spreadsheet to pull in the latest values into the dropdowns in the **Missing** column.
+This means all the components for **Donaldson** have been booked — and are no longer available to other projects. Lastly, let’s take a look at the **Total Stock** column, which remains unchanged, since the items are still physically on-site and tracked within the system.
+
+This clearly shows how the system distinguishes between:
+
+- what’s physically on the premises (**Total Stock**),
+- what’s still available for other builds (**Available Stock**),
+- and what’s already been booked for assembly (**Allocated to Assembly**).
