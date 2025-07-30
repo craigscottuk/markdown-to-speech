@@ -1,1 +1,3 @@
-Before we wrap up this section, let’s take a look at how the system handles Available Stock and Allocated Stock — and how the inventory responds when a project moves from this stage into the next stage – ASSEMBLY & TESTING.
+Then we’ll tick the checkbox for **Donaldson** in the **Send** column and click the **Send** label at the top. This triggers a script that moves the project into the **ASSEMBLY & TESTING** stage — and in turn, updates the inventory management spreadsheet. We’ll see this in action in just a moment, but first, let’s click **Yes** on the confirmation prompt to proceed.
+
+Now, let’s quickly jump back to the **STOCK LEVELS** sheet and take a look at what’s going to change.
