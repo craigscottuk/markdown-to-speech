@@ -1,1 +1,1 @@
-Before we wrap up this section, let’s take a look at how the system handles Available Stock and Allocated Stock — and how the inventory responds when a project moves from this stage into ASSEMBLY & TESTING.
+Before we wrap up this section, let’s take a look at how the system handles Available Stock and Allocated Stock — and how the inventory responds when a project moves from this stage into the next stage – ASSEMBLY & TESTING.
