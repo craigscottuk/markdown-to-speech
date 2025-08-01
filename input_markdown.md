@@ -1,1 +1,1 @@
-This means the move to the **ASSEMBLY & TESTING** stage for **Donaldson** has successfully booked — or allocated — these parts, and they’re no longer available to other projects. Lastly, let’s take a look at the **Total Stock** column, which remains unchanged, since the items are still physically on-site and tracked within the system.
+Now, jumping back to the **Offer & Production Management** spreadsheet
