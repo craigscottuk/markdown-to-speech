@@ -1,1 +1,1 @@
-But if we close that and load another project — **Anderson**, for example — we get a much more realistic picture.
+In the next video, we’ll take a look at the final two sheets in the system — the **STATS** and **SALES** sheets.
