@@ -1,1 +1,1 @@
-So, compared to the earlier stages, this part of the system is all about hands-on assembly, customer approval, and final quality control.
+This is the final stage of the production process. At this point, it’s over to the production team to prepare the bicycle for delivery or collection, depending on the customer’s preference. It’s also important to make sure all documents — including the invoice, warranty, receipt, and any other necessary paperwork — are ready for the customer.
