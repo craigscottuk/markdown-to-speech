@@ -1,1 +1,1 @@
-The bar chart shows how many days were spent in each production stage, with the overall deadline shown as a grey horizontal line
+The **Date Accepted**, **Date Completed**, and **Production Time** columns show how long the project took and how that compares with its original deadline. In this demo, we pushed **Donaldson** through the system in less than a day. With a deadline of **70 days**, it’s recorded as having **70 days to spare**. Looking at some of the other projects above gives a more realistic view of typical production times.
