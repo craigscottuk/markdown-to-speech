@@ -1,1 +1,1 @@
-At the beginning of the sheet, we have the project’s basic details: ID number, owner, and drivetrain type. We can still access the order document from the link in the **Surname/Project** column. We can also open the project in the **Project Manager** by clicking the checkbox in column B, which loads the **SUMMARY** tab by default, giving us a quick snapshot of the project’s status.
+The bar chart shows how many days were spent in each production stage, with the overall deadline shown as a grey horizontal line
