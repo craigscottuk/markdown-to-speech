@@ -1,1 +1,3 @@
-The Delivery Method dropdown is used to select either **DELIVERY** or **PICK-UP**, depending on what the customer has chosen. If **DELIVERY** is selected, the customer’s address is automatically displayed in the **Details** column.If the address needs updating, we can open the project in the **Project Manager**, navigate to the **CUSTOMER** tab, and make the change — for example, updating the postcode. Back in the main spreadsheet, we can see the address has been updated automatically.
+Let’s jump over there and scroll to the bottom to find **Donaldson**.
+
+Here we can see its status from the Dispatch & Pick-Up sheet — highlighted in yellow. One column to the left, we can also see the date that was added during the transfer from the Assembly & Testing stage.
