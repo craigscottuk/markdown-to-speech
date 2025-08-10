@@ -1,1 +1,1 @@
-along with the number of days spent in this final stage
+For **Donaldson**, there’s not much to see since we pushed it through the system in just one day. But if we close that and load another project — let’s say **Anderson** — we get a much more realistic picture. The bar chart shows how many days were spent in each production stage, with the overall deadline marked by a grey horizontal line. In this case, the chart clearly shows we went **3 days over**.
