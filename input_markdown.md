@@ -1,1 +1,23 @@
-In the next video, we’ll take a look at the final two sheets in the system — the **STATS** and **SALES** sheets.
+The system keeps track of a lot of information, and the final two sheets turn that into charts and graphs so we can see what’s going on at a glance. The sheet we’re in now — **STATS** — focuses on production, while the other — **SALES** — looks at sales performance. Both use visual breakdowns to help the team see how the business is performing and where there’s room for improvement.
+
+Let’s start with the **STATS** sheet, which gives us a detailed view of production performance.
+
+Right at the top, there’s a horizontal bar showing how active projects are distributed across the three stages. At the moment, there are twenty-six in Painting & Parts, twenty-three in Assembly & Testing, and seven in Dispatch & Pick-Up. It’s a quick way to check the workload balance across the pipeline and spot if any stage is starting to pile up.
+
+Below that is a more detailed progress and deadline view. Each column represents a single project, broken into colour-coded segments for the time spent in each stage — blue for Painting & Parts, turquoise for Assembly & Testing, and yellow for Dispatch & Pick-Up. Behind this, a grey shaded area marks the project’s deadline. If the coloured bar extends past the grey area, the project is running late. This makes it easy to see which jobs are on track, which are getting close to their deadline, and which have already exceeded.
+
+From here, we take a closer look at each production stage, starting with **Painting & Parts**. The first chart shows how many projects are in this stage compared to the others. Below that, a rolling fifteen-day “in and out” chart shows how many projects have entered and left Stage 1 each day — grey for incoming, blue for outgoing. This makes it easy to see whether work is being cleared at the same rate it’s arriving, or if a backlog is starting to build.
+
+The painted versus unpainted chart is a simple split: of the twenty-six bikes currently in this stage, sixteen have been painted and ten are still unpainted. Painted here includes statuses like Painted, Paint QC, and Paint Photo. The donut chart below breaks this down further — from Not Started and Painting, through Paint QC and Paint Approved, to any flagged Problems. Three of these projects are already at Paint Approved, meaning they’re ready to move into Assembly & Testing. Seven are at Paint Photo, waiting for customer approval before they can move forward.
+
+Assembly & Testing follows the same pattern. There are twenty-three projects here, and the in-and-out chart shows movement over the last fifteen days — grey for those coming in, teal for those leaving for Dispatch. The assembled versus unassembled chart shows nine bikes completed and fourteen still in progress. The donut chart then breaks this down further — from Not Started through to Bike Accepted — with two projects ready to be sent to Dispatch.
+
+Dispatch & Pick-Up is the smallest stage, with just seven bikes here at the moment. That’s a good sign, as it means most bikes don’t stay long in this final stage before going to the customer — usually they’re just waiting for final payment or packing. The in-and-out chart shows arrivals from Assembly and departures to customers. The packed versus unpacked chart shows three bikes ready to go and four still to be boxed. The donut chart shows the statuses — from Not Started, to In Progress, to Ready, to Dispatched. Two projects have already reached Dispatched, meaning they can be moved to the Completed sheet to close out the project and update inventory.
+
+From here, we zoom out to look at overall production output.
+
+In 2024, the monthly line chart compares the number of deadlines set, shown in grey, with the number of bikes completed, shown in blue. Output builds steadily through the year, with completions peaking at eighty in November. The stacked bar version shows the same data as proportions, making it easy to see how completions compared to deadlines each month. The weekly breakdown shows a slow start, no completions until mid-April, and then a steady rise through summer into the busiest weeks — forty-five and forty-eight — where twenty-one bikes were completed.
+
+The same analysis for 2025 tells a very different story. In the monthly chart, the red line shows completions, and the grey line shows deadlines. Production starts strong in January with fifty-nine completions against sixty-five deadlines, but then steadily declines from February through April. There’s a brief spike in July with forty-nine completions, but by August output drops to eight bikes, and there’s been no recorded production from September onwards — with the year still in progress.
+
+Finally, mechanic performance charts show how many projects each mechanic has completed — by month and by year — making it easy to compare output and track changes over time.
