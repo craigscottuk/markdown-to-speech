@@ -1,1 +1,1 @@
-We’ll look at how these documents are created and sent to the customer later in the demonstration.
+The **Owner** field shows which team member created the offer and is responsible for managing it through its lifecycle if it's successful.
