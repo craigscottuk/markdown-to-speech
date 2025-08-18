@@ -1,1 +1,1 @@
-We’ll look at how we can use the system to generate these documents and send them to the customer later in the demonstration.
+Back in the **OFFERS** sheet, customer information — including **First Name**, **Email**, and **Telephone** — is grouped under collapsible columns, making key contact details easy to access without cluttering the sheet.
