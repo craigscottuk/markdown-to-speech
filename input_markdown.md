@@ -1,1 +1,1 @@
-We select **REMOVE** for offers that have been unsuccessful
+If an offer document has already been generated for the project, it’s linked in the **Surname / Project Name** column, and can be accessed by clicking the project name, which appears as a hyperlink. Hovering over the cell shows a small preview of the PDF.
