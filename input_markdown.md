@@ -1,1 +1,1 @@
-In this case, it’s a gravel bike with a _Shimano GRX 2x12_ drivetrain — followed by a divider and a vertically formatted list of all required parts and their quantities.
+Finally, over on the far right of the sheet, there is a set of cost-related columns helps validate the **System Price** and flag any issues before the offer moves into production:
