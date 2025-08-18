@@ -1,1 +1,3 @@
-The **Status** column contains dropdowns that allow the sales team to update each offer’s stage in the sales process. We’ll cover these in more detail later in the demonstration — but for now, let’s look at how to remove an offer.
+Next to the **Status** column, we have fields for **Currency** and **VAT Rate**, followed by two key pricing columns.
+
+Starting with the **System Price** — a dynamic value that's calculated automatically based on the project's design and configuration, as well as the customer’s selected currency and VAT rate.
