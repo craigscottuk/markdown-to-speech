@@ -1,3 +1,1 @@
-Next to the **Status** column, we have fields for **Currency** and **VAT Rate**, followed by two key pricing columns.
-
-Starting with the **System Price** — a dynamic value that's calculated automatically based on the project's design and configuration, as well as the customer’s selected currency and VAT rate.
+If a customer document has already been generated for the offer, the project name appears as a clickable link. Hovering over the cell shows a small preview of the PDF.
