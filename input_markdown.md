@@ -1,1 +1,1 @@
-Lastly, the mechanic performance charts show how many projects each mechanic has completed — first as an overall yearly total, and then broken down by month in the charts below. This makes it easy to compare output between mechanics and track changes in performance over time.
+The **Status** column contains dropdowns that allow the sales team to update each offer’s stage in the sales process. We’ll cover these in more detail later in the demonstration — but for now, let’s look at how to remove an offer.
