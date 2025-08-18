@@ -1,1 +1,1 @@
-If an offer document has already been generated for the project, it’s linked in the **Surname / Project Name** column, and can be accessed by clicking the project name, which appears as a hyperlink. Hovering over the cell shows a small preview of the PDF.
+In this case, it’s a gravel bike with a _Shimano GRX 2x12_ drivetrain — followed by a divider and a vertically formatted list of all required parts and their quantities.
