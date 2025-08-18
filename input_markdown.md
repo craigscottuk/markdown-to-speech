@@ -1,1 +1,1 @@
-Back in the **OFFERS** sheet, customer information — including **First Name**, **Email**, and **Telephone** — is grouped under collapsible columns, making key contact details easy to access without cluttering the sheet.
+To access the full offer data, we need to expand the grouped columns on the far right side of the sheet.
