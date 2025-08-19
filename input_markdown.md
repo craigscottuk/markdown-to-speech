@@ -1,3 +1,3 @@
-Each column in this section represents a **specific component category** used in a bike build — like **Bottom Bracket**, **Crankset**, **Front Chainring**, or **Brake / Shift Lever**.
+It’s important that part names match exactly, since entries here are validated against data from the **PARTS INDEX**, located in the **Inventory & Parts Management** spreadsheet.
 
-To help users make updates quickly and accurately, each cell includes a dropdown menu with a list of components in that category. This prevents typos or inconsistent naming, and helps users select parts without needing to memorise model numbers.
+If a part is mistyped or not recognised by the system, a Google Sheets data validation rule will flag the cell and display a warning.
