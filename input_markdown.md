@@ -1,1 +1,1 @@
-To do this, we’ll open the **Parts & Inventory Management** spreadsheet to get access to the **PARTS INDEX** which the first sheet in this spreadsheet.
+To resolve this, we can either go back and fix the typo — or, if it’s a valid part, add it to the **PARTS INDEX**.
