@@ -1,3 +1,3 @@
-It’s important that part names match exactly, since entries here are validated against data from the **PARTS INDEX**, located in the **Inventory & Parts Management** spreadsheet.
+That same invalid item is then flagged in the **_Unknown Items_** column.
 
-If a part is mistyped or not recognised by the system, a Google Sheets data validation rule will flag the cell and display a warning.
+Conditional formatting highlights the issue with a red background and yellow text. Clicking the highlighted cell opens a dropdown listing the unrecognised part and its quantity.
