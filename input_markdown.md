@@ -1,1 +1,3 @@
-To access the full offer data, we need to expand the grouped columns on the far right side of the sheet.
+Each column in this section represents a **specific component category** used in a bike build — like **Bottom Bracket**, **Crankset**, **Front Chainring**, or **Brake / Shift Lever**.
+
+To help users make updates quickly and accurately, each cell includes a dropdown menu with the components in that category. This prevents typos or inconsistent naming, and helps users select parts without needing to memorise model numbers.
