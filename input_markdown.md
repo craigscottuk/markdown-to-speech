@@ -1,1 +1,1 @@
-There’s also error checking built in. If a typo is entered in the _Configuration_ tab, the field is immediately highlighted using conditional formatting.
+There’s also error checking built in here. For example, If we enter a typo in this Chainring field, it's highlighted using conditional formatting to alert us.
