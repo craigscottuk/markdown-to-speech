@@ -1,1 +1,1 @@
-So, basically, the **Project Manager** offers a faster, more focused way to work — allowing users to concentrate on one project at a time.
+There’s also error checking built in. If a typo is entered in the _Configuration_ tab, the field is immediately highlighted using conditional formatting.
