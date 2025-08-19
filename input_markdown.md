@@ -1,3 +1,1 @@
-To open an offer, simply tick the checkbox next to the project ID and name. This triggers a script that opens the **Project Manager Tool** in a new tab and pulls in the corresponding offer data from the main spreadsheet.
-
-The **Project Manager** is a template spreadsheet that displays the same offer, but in a vertical layout, with information grouped into tabbed sections: **Status**, **Price**, **Dates**, **Configuration**, **Design**, and **Customer**.
+Now, if we return to the main **Offer & Production Management** spreadsheet, we’ll see the changes have been applied – under the design column we see **Yellow** and the Painting Cost is now 500 PLN. We can also see the chainring field is now empty as expected.
