@@ -1,3 +1,1 @@
-To keep the demo simple, we’ll deselect this one and send **Donaldson** only.
-
-To move the selected project into production, we open the **Send** menu and choose **Send to next stage**. A confirmation window appears, listing the selected projects. In this case the action will apply to **Donaldson** alone.
+Looking at the **Painting Status** column, we can see that the painting of Donaldson’s frameset is currently marked as **NOT STARTED**. Values in this column are sent to the **PRODUCTION** sheet to provide a high-level snapshot of each build’s progress.
