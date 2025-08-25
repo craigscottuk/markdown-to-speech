@@ -1,1 +1,6 @@
-Looking at the **Painting Status** column, we can see that the painting of Donaldson’s frameset is currently marked as **NOT STARTED**. Values in this column are sent to the **PRODUCTION** sheet to provide a high-level snapshot of each build’s progress.
+- **Frames and Forks**
+- **Drivetrain**
+- **Wheels**
+- **Cockpit**
+- **Saddles, Seatposts and Pedals**
+- and **Accessories**
