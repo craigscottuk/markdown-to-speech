@@ -1,1 +1,1 @@
-let’s take a closer look at how the system manages stock behind the scenes — specifically how **Available Stock** and **Allocated Stock** are updated as a project moves forward.
+Back in part 11, we cleared out all of the stock except for the components needed to complete the **Donaldson** build — and that’s still the case.
